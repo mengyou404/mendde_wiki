@@ -1,0 +1,131 @@
+/* 基本样式 */
+body {
+    font-family: Arial, sans-serif; /* 设置字体 */
+    background-color: #121212; /* 背景颜色 */
+    color: #e0e0e0; /* 文字颜色 */
+    margin: 0; /* 移除默认外边距 */
+    padding: 0; /* 移除默认内边距 */
+}
+
+header {
+    background-color: #1e1e1e; /* 头部背景颜色 */
+    padding: 10px; /* 内边距 */
+    text-align: center; /* 居中文本 */
+    border-bottom: 1px solid #333; /* 底部边框 */
+}
+
+nav ul {
+    list-style: none; /* 移除列表样式 */
+    padding: 0; /* 移除内边距 */
+}
+
+nav ul li {
+    display: inline; /* 列表项水平排列 */
+    margin: 0 10px; /* 列表项之间的间距 */
+}
+
+nav ul li a {
+    color: #e0e0e0; /* 链接颜色 */
+    text-decoration: none; /* 移除下划线 */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* 鼠标悬停时显示下划线 */
+}
+
+main {
+    padding: 20px; /* 主内容区域的内边距 */
+}
+
+footer {
+    background-color: #1e1e1e; /* 页脚背景颜色 */
+    color: #e0e0e0; /* 页脚文字颜色 */
+    text-align: center; /* 居中文本 */
+    padding: 10px; /* 内边距 */
+    border-top: 1px solid #333; /* 顶部边框 */
+}
+
+img {
+    max-width: 100%; /* 图片最大宽度 */
+    height: auto; /* 自动高度 */
+}
+
+/* 搜索框样式 */
+.search-container {
+    margin-bottom: 20px; /* 搜索框底部外边距 */
+    position: relative; /* 相对定位 */
+}
+
+#search-input {
+    width: 100%; /* 输入框宽度 */
+    padding: 10px; /* 内边距 */
+    border: 1px solid #333; /* 边框 */
+    border-radius: 4px; /* 圆角 */
+    background-color: #333; /* 背景颜色 */
+    color: #fff; /* 文字颜色 */
+}
+
+#search-results {
+    list-style: none; /* 移除列表样式 */
+    padding: 0; /* 移除内边距 */
+    margin: 0; /* 移除外边距 */
+    display: none; /* 默认不显示 */
+    background-color: #333; /* 背景颜色 */
+    color: #fff; /* 文字颜色 */
+    border: 1px solid #444; /* 边框 */
+    border-radius: 4px; /* 圆角 */
+    position: absolute; /* 绝对定位 */
+    top: calc(100% + 10px); /* 位置 */
+    left: 0; /* 左侧位置 */
+    width: 100%; /* 宽度 */
+    z-index: 1000; /* 层叠顺序 */
+}
+
+#search-results li {
+    padding: 10px; /* 内边距 */
+    background-color: #333; /* 背景颜色 */
+    color: #fff; /* 文字颜色 */
+    border-bottom: 1px solid #444; /* 底部边框 */
+}
+
+#search-results li:last-child {
+    border-bottom: none; /* 最后一个列表项无底部边框 */
+}
+
+#search-results li:hover {
+    background-color: #444; /* 鼠标悬停时的背景颜色 */
+}
+
+/* 分类样式 */
+.categories {
+    margin-bottom: 20px; /* 分类区域底部外边距 */
+}
+
+.categories ul {
+    list-style: none; /* 移除列表样式 */
+    padding: 0; /* 移除内边距 */
+    margin: 0; /* 移除外边距 */
+}
+
+.categories ul li {
+    display: inline-block; /* 列表项水平排列 */
+    margin-right: 10px; /* 列表项右侧间距 */
+}
+
+.categories ul li a {
+    color: #e0e0e0; /* 链接颜色 */
+    text-decoration: none; /* 移除下划线 */
+    padding: 5px 10px; /* 内边距 */
+    border: 1px solid #333; /* 边框 */
+    border-radius: 4px; /* 圆角 */
+}
+
+.categories ul li a:hover {
+    background-color: #333; /* 鼠标悬停时的背景颜色 */
+}
+
+/* 高亮样式 */
+.highlight {
+    background-color: #666; /* 高亮背景颜色 */
+    color: #fff; /* 高亮文字颜色 */
+}

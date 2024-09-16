@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>我的本地百科</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="node_modules/pinyin/dist/pinyin.min.js"></script>
+    <script src="search.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>我的本地百科</h1> <!-- 网站标题 -->
+        <nav>
+            <ul>
+                <li><a href="#">主页</a></li> <!-- 导航链接 -->
+                <li><a href="#">关于</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="搜索百科条目"> <!-- 搜索输入框 -->
+            <ul id="search-results"></ul> <!-- 搜索结果列表 -->
+        </div>
+
+        <div class="categories">
+            <h2>分类</h2> <!-- 分类标题 -->
+            <ul>
+                <li><a href="#" data-category="历史">历史</a></li> <!-- 分类链接 -->
+                <li><a href="#" data-category="科学">科学</a></li>
+                <li><a href="#" data-category="艺术">艺术</a></li>
+                <li><a href="#" data-category="技术">技术</a></li>
+            </ul>
+        </div>
+
+        <h2>百科条目</h2> <!-- 条目标题 -->
+        <ul id="entry-list">
+            <li><a href="entries/entry1.html" data-category="历史">条目一</a></li> <!-- 条目链接 -->
+            <li><a href="entries/entry2.html" data-category="科学">条目二</a></li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 我的本地百科</p> <!-- 版权信息 -->
+    </footer>
+</body>
+</html>
